@@ -1,0 +1,17 @@
+<gtu> //comment
+&nbsp non blank space
+< gtu > this is content it would be displayed on the screen
+imp tag 
+<p>
+<div>
+<span>
+all three are used to seperate the content logically or phsically
+
+<p>
+it seperates the content logically and physically with extra line before and after.
+
+<div>
+it seperates the content logically as well as physically with no extra line.
+
+<span>
+it seperates the contents logically.

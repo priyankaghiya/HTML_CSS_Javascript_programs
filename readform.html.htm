@@ -1,0 +1,96 @@
+
+<!-- saved from url=(0051)file:///C:/Users/lenovo/Downloads/readform.html.htm -->
+
+<html>
+<head>
+<script>
+function printme()
+{
+var a=new Array(8);
+var i=0;
+a[i++]=f1.tna.value;
+a[i++]=f1.tad.value;
+a[i++]=f1.dept.value;
+
+for(j=0;j<f1.gen.length;j++)
+{
+if(f1.gen[j].checked)
+{
+a[i++]=f1.gen[j].value;
+}
+}
+
+for(j=0;j<f1.hob.length;j++)
+{
+if(f1.hob[j].checked)
+{
+a[i++]=f1.hob[j].value;
+}
+}
+var e=document.getElementById("dd");
+e.innerHTML=a;
+}
+
+</script>
+
+
+
+</head>
+
+<body>
+
+
+<form name="f1">
+
+
+NAME : <input type="text" name="tna">
+ <br>
+
+ADDRESS : <textarea name="tad" rows="3">
+ </textarea> 
+<br>
+
+
+
+A/C. TYPE : <select name="dept">
+		
+<option value="CURRENT"> CURRENT </option>
+
+		<option value="FIXED"> FIXED </option>
+
+		<option value="SAVING"> SAVING </option>
+
+	    </select>
+<br>
+
+
+GENDER : <input type="radio" name="gen" value="MALE">
+MALE
+	 <input type="radio" name="gen" value="FEMALE">
+FEMALE  <br>
+
+
+HOBBIES : <input type="checkbox" name="hob" value="SING">
+ SING
+	  <input type="checkbox" name="hob" value="DANCE">
+ DANCE
+	  <input type="checkbox" name="hob" value="SWIM">
+ SWIM
+	  <input type="checkbox" name="hob" value="SPORT"> 
+SPORT   <br><br>
+
+<input type="button" name="b1" value="PRINT DATA" onclick="printme()">
+
+
+</form>
+
+<br><br>
+
+
+<div id="dd">
+RESULT HERE
+</div>
+
+
+</body>
+</html>
